@@ -1,12 +1,19 @@
 @import 'button';
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/*
+ * Globals
+ */
+$coverBorderSkew: -7.5deg;
 
 /*
  * Structure
  */
-html, body {
+html, 
+body {
   height: 100%;
-  background-color: rgb(92, 114, 116);
+  background-color: rgb(40, 53, 67);
 }
 
 body {
@@ -15,6 +22,10 @@ body {
   color: #fff;
 
   font-family: 'Cabin', sans-serif;
+}
+
+.cover-container {
+  background-image: url("../bg.jpg");
 }
 
 
@@ -59,12 +70,27 @@ body {
  * Cover
  */
 .cover {
-  padding: 0 1.5rem;
 
   .cover-heading {
     font-size: 5em;
   }
+  .cover-heading,
+  .cover-buttons {
+    transform: skew(-$coverBorderSkew);
+  }
   .cover-text {
     padding: 0 30%;
   }
+
+  border: 5px solid white;
+  // border-top: none;
+  // border-bottom: none;
+
+  background-color: rgb(31, 41, 52);
+
+  padding: 5% !important;
+
+  transform: skew($coverBorderSkew);
+
+
 }

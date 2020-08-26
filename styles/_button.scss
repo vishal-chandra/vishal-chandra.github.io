@@ -8,12 +8,13 @@ $regularBorderColor: white;
 .slidebtn {
     background: none;
     border: 1px solid $regularBorderColor;
+    border-radius: 0%;
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
 
     color: $regularColor;
-    transition: 0.85s;
+    transition-duration: 0.85s;
 
     &:hover,
     &:focus { 

@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 .slidebtn {
   background: none;
   border: 1px solid white;
+  border-radius: 0%;
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
   color: #00ffe6;
-  -webkit-transition: 0.85s;
-  transition: 0.85s;
+  -webkit-transition-duration: 0.85s;
+          transition-duration: 0.85s;
 }
 
 .slidebtn:hover, .slidebtn:focus {
@@ -18,11 +20,15 @@
 }
 
 /*
+ * Globals
+ */
+/*
  * Structure
  */
-html, body {
+html,
+body {
   height: 100%;
-  background-color: #5c7274;
+  background-color: #283543;
 }
 
 body {
@@ -31,6 +37,10 @@ body {
   display: flex;
   color: #fff;
   font-family: 'Cabin', sans-serif;
+}
+
+.cover-container {
+  background-image: url("../bg.jpg");
 }
 
 /*
@@ -70,11 +80,21 @@ body {
  * Cover
  */
 .cover {
-  padding: 0 1.5rem;
+  border: 5px solid white;
+  background-color: #1f2934;
+  padding: 5% !important;
+  -webkit-transform: skew(-7.5deg);
+          transform: skew(-7.5deg);
 }
 
 .cover .cover-heading {
   font-size: 5em;
+}
+
+.cover .cover-heading,
+.cover .cover-buttons {
+  -webkit-transform: skew(7.5deg);
+          transform: skew(7.5deg);
 }
 
 .cover .cover-text {
