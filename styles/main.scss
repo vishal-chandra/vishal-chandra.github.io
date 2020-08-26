@@ -1,4 +1,5 @@
 @import 'button';
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 /*
  * Structure
@@ -12,6 +13,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
+
+  font-family: 'Cabin', sans-serif;
 }
 
 
