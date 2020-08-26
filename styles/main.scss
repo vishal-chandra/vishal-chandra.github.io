@@ -69,20 +69,14 @@ body {
   }
 }
 
-@keyframes contentSlant {
-  from {
-    transfrom: skew(0deg);
-  }
-  to {
-    transform: skew(-$coverBorderSkew);
-  }
-}
-
 @keyframes borderSlant {
-  from {
+  0% {
     transfrom: skew(0deg);
   }
-  to {
+  90% {
+    transform: skew(15deg);
+  }
+  100% {
     transform: skew($coverBorderSkew);
   }
 }

@@ -8,7 +8,7 @@ $hoverTextColor: black;
 $regularColor: $brightBlue;
 $regularBorderColor: white;
 
-.slideBtn {
+#slideBtn {
     background: none;
     border: 1px solid $regularBorderColor;
     border-radius: 0%;
@@ -27,7 +27,7 @@ $regularBorderColor: white;
     }
 }
 
-.lqdBtn {
+#lqdBtn {
     flex: 1;
     padding: 25px 50px;
     margin: 25px;

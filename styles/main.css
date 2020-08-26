@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-.slideBtn {
+#slideBtn {
   background: none;
   border: 1px solid white;
   border-radius: 0%;
@@ -12,14 +12,14 @@
           transition-duration: 0.85s;
 }
 
-.slideBtn:hover, .slideBtn:focus {
+#slideBtn:hover, #slideBtn:focus {
   border-color: #00ffe6;
   color: black;
   -webkit-box-shadow: inset 15em 0 0 0 #00ffe6;
           box-shadow: inset 15em 0 0 0 #00ffe6;
 }
 
-.lqdBtn {
+#lqdBtn {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -40,7 +40,7 @@
   transition: 1.5s ease;
 }
 
-.lqdBtn:hover {
+#lqdBtn:hover {
   background-position: 500% 100%;
 }
 
@@ -157,41 +157,29 @@ body {
   }
 }
 
-@-webkit-keyframes contentSlant {
-  from {
-    transfrom: skew(0deg);
-  }
-  to {
-    -webkit-transform: skew(8deg);
-            transform: skew(8deg);
-  }
-}
-
-@keyframes contentSlant {
-  from {
-    transfrom: skew(0deg);
-  }
-  to {
-    -webkit-transform: skew(8deg);
-            transform: skew(8deg);
-  }
-}
-
 @-webkit-keyframes borderSlant {
-  from {
+  0% {
     transfrom: skew(0deg);
   }
-  to {
+  90% {
+    -webkit-transform: skew(15deg);
+            transform: skew(15deg);
+  }
+  100% {
     -webkit-transform: skew(-8deg);
             transform: skew(-8deg);
   }
 }
 
 @keyframes borderSlant {
-  from {
+  0% {
     transfrom: skew(0deg);
   }
-  to {
+  90% {
+    -webkit-transform: skew(15deg);
+            transform: skew(15deg);
+  }
+  100% {
     -webkit-transform: skew(-8deg);
             transform: skew(-8deg);
   }
