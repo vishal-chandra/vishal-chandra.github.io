@@ -1,8 +1,10 @@
-/* Custom default button */
-.btn-outline-light {
-  text-shadow: none; /* Prevent inheritance from `body` */
-  border: .1rem solid rgb(250, 12, 12);
-}
+@import 'button';
+
+// /* Custom default button */
+// .btn-outline-light {
+//   text-shadow: none; /* Prevent inheritance from `body` */
+//   border: .1rem solid rgb(250, 12, 12);
+// }
 
 /*
  * Structure

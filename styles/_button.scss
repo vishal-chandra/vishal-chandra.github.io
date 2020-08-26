@@ -1,0 +1,22 @@
+$hoverColor: rgb(0, 255, 229);
+$hoverTextColor: black;
+$regularColor: white;
+
+.slidebtn {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+
+    color: $regularColor;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus { 
+        border-color: $hoverColor;
+        color: $hoverTextColor;
+        box-shadow: inset 15em 0 0 0 $hoverColor;
+    }
+}

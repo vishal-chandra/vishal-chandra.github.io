@@ -1,8 +1,20 @@
-/* Custom default button */
-.btn-outline-light {
-  text-shadow: none;
-  /* Prevent inheritance from `body` */
-  border: 0.1rem solid #fa0c0c;
+.slidebtn {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slidebtn:hover, .slidebtn:focus {
+  border-color: #00ffe5;
+  color: black;
+  -webkit-box-shadow: inset 15em 0 0 0 #00ffe5;
+          box-shadow: inset 15em 0 0 0 #00ffe5;
 }
 
 /*
