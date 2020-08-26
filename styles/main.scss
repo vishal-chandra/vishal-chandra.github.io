@@ -23,7 +23,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 100%;
 }
 
 /*
@@ -34,12 +34,12 @@ body {
     .nav-link {
         padding: .25rem 0;
         font-weight: 700;
-        color: rgba(255, 255, 255, .5);
+        color: rgb(0, 255, 230);
         background-color: transparent;
         border-bottom: .25rem solid transparent;
 
         &:hover, &:focus {
-            border-bottom-color: rgba(255, 255, 255, 0.365);
+            border-bottom-color: rgb(0, 255, 230);
         }
 
         &+.nav-link {
@@ -69,8 +69,8 @@ body {
 .cover {
   padding: 0 1.5rem;
 
-  .btn-lg {
-    padding: .75rem 1.25rem;
-    font-weight: 700;
+  .cover-text {
+    padding: 0 20%;
+    //max-width: 42em;
   }
 }
