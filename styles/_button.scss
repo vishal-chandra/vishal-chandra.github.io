@@ -5,7 +5,7 @@ $hoverTextColor: black;
 $regularColor: $brightBlue;
 $regularBorderColor: white;
 
-.slidebtn {
+.slideBtn {
     background: none;
     border: 1px solid $regularBorderColor;
     border-radius: 0%;
@@ -21,5 +21,27 @@ $regularBorderColor: white;
         border-color: $hoverColor;
         color: $hoverTextColor;
         box-shadow: inset 15em 0 0 0 $hoverColor;
+    }
+}
+
+.lqdBtn {
+    flex: 1;
+    padding: 25px 50px;
+    margin: 25px;
+    border-radius: 999px;
+    border: 5px solid $brightBlue;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    text-shadow: 0 3px 5px rgba(#000, 0.25);
+    white-space: nowrap;
+    color: #fff;
+    background: transparent;
+    background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+    
+    &:hover {
+      background-position: 500% 100%;
     }
 }

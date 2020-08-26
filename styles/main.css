@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-.slidebtn {
+.slideBtn {
   background: none;
   border: 1px solid white;
   border-radius: 0%;
@@ -12,11 +12,36 @@
           transition-duration: 0.85s;
 }
 
-.slidebtn:hover, .slidebtn:focus {
+.slideBtn:hover, .slideBtn:focus {
   border-color: #00ffe6;
   color: black;
   -webkit-box-shadow: inset 15em 0 0 0 #00ffe6;
           box-shadow: inset 15em 0 0 0 #00ffe6;
+}
+
+.lqdBtn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px 50px;
+  margin: 25px;
+  border-radius: 999px;
+  border: 5px solid #00ffe6;
+  font-family: 'VT323', monospace;
+  font-size: 25px;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  color: #fff;
+  background: transparent;
+  background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
+  background-repeat: repeat-x;
+  background-position: 0 -100%;
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+}
+
+.lqdBtn:hover {
+  background-position: 500% 100%;
 }
 
 /*
