@@ -44,6 +44,50 @@
   background-position: 500% 100%;
 }
 
+.typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-animation: animated-text 3s steps(29, end) 1s 1 normal both;
+          animation: animated-text 3s steps(29, end) 1s 1 normal both;
+}
+
+/* text animation */
+@-webkit-keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 7em;
+  }
+}
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 7em;
+  }
+}
+
+/* cursor animations */
+@-webkit-keyframes animated-cursor {
+  from {
+    border-right-color: #00ffe6;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes animated-cursor {
+  from {
+    border-right-color: #00ffe6;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 /*
  * Globals
  */
@@ -108,21 +152,24 @@ body {
   border: 5px solid white;
   background-color: #1f2934;
   padding: 5% !important;
-  -webkit-transform: skew(-7.5deg);
-          transform: skew(-7.5deg);
 }
 
 .cover .cover-heading {
   font-size: 5em;
 }
 
+.cover .cover-text {
+  padding: 0 30%;
+}
+
+.cover {
+  -webkit-transform: skew(-7.5deg);
+          transform: skew(-7.5deg);
+}
+
 .cover .cover-heading,
 .cover .cover-buttons {
   -webkit-transform: skew(7.5deg);
           transform: skew(7.5deg);
-}
-
-.cover .cover-text {
-  padding: 0 30%;
 }
 /*# sourceMappingURL=main.css.map */
