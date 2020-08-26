@@ -48,8 +48,8 @@
   white-space: nowrap;
   overflow: hidden;
   margin: 0 auto;
-  -webkit-animation: animated-text 3s steps(29, end) 1s 1 normal both;
-          animation: animated-text 3s steps(29, end) 1s 1 normal both;
+  -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both;
+          animation: animated-text 2s steps(29, end) 1s 1 normal both;
 }
 
 /* text animation */
@@ -97,7 +97,7 @@
 html,
 body {
   height: 100%;
-  background-color: #283543;
+  background-color: #8c999a;
 }
 
 body {
@@ -106,10 +106,6 @@ body {
   display: flex;
   color: #fff;
   font-family: 'Cabin', sans-serif;
-}
-
-.cover-container {
-  background-image: url("../bg.jpg");
 }
 
 /*
@@ -163,13 +159,53 @@ body {
 }
 
 .cover {
-  -webkit-transform: skew(-7.5deg);
-          transform: skew(-7.5deg);
+  -webkit-animation: borderSlant 2s ease-in-out 0s 1 forwards !important;
+          animation: borderSlant 2s ease-in-out 0s 1 forwards !important;
 }
 
 .cover .cover-heading,
 .cover .cover-buttons {
-  -webkit-transform: skew(7.5deg);
-          transform: skew(7.5deg);
+  -webkit-animation: contentSlant 2s ease-in-out 0s 1 forwards !important;
+          animation: contentSlant 2s ease-in-out 0s 1 forwards !important;
+}
+
+@-webkit-keyframes contentSlant {
+  from {
+    transfrom: skew(0deg);
+  }
+  to {
+    -webkit-transform: skew(8deg);
+            transform: skew(8deg);
+  }
+}
+
+@keyframes contentSlant {
+  from {
+    transfrom: skew(0deg);
+  }
+  to {
+    -webkit-transform: skew(8deg);
+            transform: skew(8deg);
+  }
+}
+
+@-webkit-keyframes borderSlant {
+  from {
+    transfrom: skew(0deg);
+  }
+  to {
+    -webkit-transform: skew(-8deg);
+            transform: skew(-8deg);
+  }
+}
+
+@keyframes borderSlant {
+  from {
+    transfrom: skew(0deg);
+  }
+  to {
+    -webkit-transform: skew(-8deg);
+            transform: skew(-8deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */
