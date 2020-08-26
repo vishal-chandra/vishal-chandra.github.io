@@ -158,15 +158,40 @@ body {
   padding: 0 30%;
 }
 
+.cover .cover-heading,
+.cover .cover-buttons {
+  opacity: 0;
+  -webkit-transform: skew(8deg);
+          transform: skew(8deg);
+}
+
 .cover {
   -webkit-animation: borderSlant 2s ease-in-out 0s 1 forwards !important;
           animation: borderSlant 2s ease-in-out 0s 1 forwards !important;
 }
 
-.cover .cover-heading,
-.cover .cover-buttons {
-  -webkit-animation: contentSlant 2s ease-in-out 0s 1 forwards !important;
-          animation: contentSlant 2s ease-in-out 0s 1 forwards !important;
+.cover-heading,
+.cover-buttons {
+  -webkit-animation: fade 2s ease-in-out 2s 1 forwards !important;
+          animation: fade 2s ease-in-out 2s 1 forwards !important;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes contentSlant {
