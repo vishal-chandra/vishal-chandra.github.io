@@ -7,7 +7,7 @@
  * Globals
  */
 $coverBorderSkew: -8deg;
-$slantDuration: 2s;
+$slantDuration: 1.7s;
 
 /*
  * Structure
@@ -56,7 +56,7 @@ body {
 
   .cover-heading,
   .cover-buttons {
-    animation: fade 2s ease-in-out $slantDuration 1 forwards !important;
+    animation: fade 1s ease-in-out $slantDuration 1 forwards !important;
   }
 }
 
@@ -79,4 +79,19 @@ body {
   100% {
     transform: skew($coverBorderSkew);
   }
+}
+
+.jumbotron {
+  transform: skew($coverBorderSkew);
+
+  border-radius: 0%;
+  border: 5px solid white;
+  background-color: rgb(36, 51, 67);
+  padding: 5% !important;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
 }

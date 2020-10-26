@@ -8,21 +8,10 @@
     <title>Vishal Chandra</title>
   </head>
 
-  <body class="text-center">
+  <body>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <!-- <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav> -->
-        </div>
-      </header>
-      
-      <div id="coverpage" class="row justify-content-center">
-        <div role="main" class="inner cover col-xs-9 col-sm-10 col-md-6">
+      <div id="coverpage" class="row justify-content-center" style="margin-top: 10%; margin-bottom: 15%;">
+        <div class="inner cover col-xs-9 col-sm-10 col-md-6 text-center">
           <h1 class="cover-heading no-wrap">Vishal Chandra</h1>
           <!-- <p class="lead cover-text">
             Hi, I'm Vishal! I'm a senior at Concord-Carlisle High School and I love to code
@@ -31,17 +20,90 @@
           </p> -->
           <p class="cover-buttons">
             <button href="#" id="lqdBtn" class="btn btn-lg btn-outline-light">about</button>
-            <button href="#" id="slideBtn" class="btn btn-lg btn-outline-light">projects</button>
-            <button href="#" id="slideBtn" class="btn btn-lg btn-outline-light">contact</button>
+            <button href="#" id="lqdBtn" class="btn btn-lg btn-outline-light">projects</button>
+            <button href="#" id="lqdBtn" class="btn btn-lg btn-outline-light">contact</button>
           </p>
         </div>
       </div>
-    
-      <footer class="mastfoot mt-auto">
-        <!-- <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        </div> -->
-      </footer>
+
+      <div class="container">
+
+        <div class="row text-center">
+          <div class="col-md-6 mx-auto">
+            <div class="jumbotron">
+              <h1>Projects</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96); ">
+              <img class="card-img-top" src="./img/projects/kaleidocycles.png" height=20%>
+              <div class="card-body">
+                <h4 class="card-title">Kaleidocycles</h4>
+                <p class="card-text">
+                  Simulating and sculpting a class of ring linkages called "kaleidocycles." 
+                  They can be shaped and formed to create interesting designs, 
+                  with both artistic and mechanical functionality. (paper pending submission)
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='http://kaleidocycles.live';">website</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='https://github.com/vishal-chandra/Kaleidocycles';">source</button>
+                  </div>
+
+                  <medium class="tech text-muted">Three.js, jQuery</medium>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96)">
+              <img class="card-img-top" src="https://github.com/vishal-chandra/Harmonograph/raw/master/Demos/2.png">
+              <div class="card-body">
+                <h4 class="card-title">Harmonograph</h4>
+                <p class="card-text">
+                  A simulation of a Harmonograph table, a suspended, swinging table 
+                  with a pen fixed to it. The table acts like a two dimensional pendulum,
+                  so the images can recreated by plotting two parametric equations.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='https://github.com/vishal-chandra/Harmonograph';">source</button>
+                  </div>
+
+                  <medium class="tech text-muted">Processing</medium>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96)">
+              <img class="card-img-top" src="https://github.com/sophia-hubscher/flappy-bird-genetics/raw/master/res/readme/screenShot.png" width=90%>
+              <div class="card-body">
+                <h4 class="card-title">Flappy Genetics</h4>
+                <p class="card-text">
+                  Exploring genetic algorthims by teaching flappy bird to play by
+                  itself! Following the model of genetic algorithms, the leaders of
+                  each "generation" are used as the basis of the next generation.
+                  Implemented from scratch to optimize the weights of Kim Marcel's Toy Neural Net.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='https://github.com/vishal-chandra/Harmonograph';">source</button>
+                  </div>
+
+                  <medium class="tech text-muted">Processing, Toy NN</medium>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

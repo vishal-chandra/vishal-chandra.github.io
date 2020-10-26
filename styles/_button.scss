@@ -38,7 +38,28 @@ $regularBorderColor: white;
     color: $regularColor;
 
     background: transparent;
-    background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
+    background-image: url(../img/effects/liquidfill.png);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 2.5s ease;
+    
+    &:hover {
+      background-position: 500% 100%;
+      color: $hoverTextColor
+    }
+}
+
+#lqdBtn-xs {
+    line-height: 0.5;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+
+    border-radius: 0%;
+    border: 1px solid $regularBorderColor;
+    color: $regularColor;
+
+    background: transparent;
+    background-image: url(../img/effects/liquidfill.png);
     background-repeat: repeat-x;
     background-position: 0 -100%;
     transition: 2.5s ease;
