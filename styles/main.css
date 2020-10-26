@@ -20,28 +20,23 @@
 }
 
 #lqdBtn {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 25px 50px;
-  margin: 25px;
-  border-radius: 999px;
-  border: 5px solid #00ffe6;
-  font-family: 'VT323', monospace;
-  font-size: 25px;
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
-  white-space: nowrap;
-  color: #fff;
+  line-height: 1;
+  padding: 1em 2em;
+  margin: 0.5em;
+  border-radius: 0%;
+  border: 1px solid white;
+  color: #00ffe6;
   background: transparent;
   background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
   background-repeat: repeat-x;
   background-position: 0 -100%;
-  -webkit-transition: 1.5s ease;
-  transition: 1.5s ease;
+  -webkit-transition: 2.5s ease;
+  transition: 2.5s ease;
 }
 
 #lqdBtn:hover {
   background-position: 500% 100%;
+  color: black;
 }
 
 .typewriter {
@@ -113,7 +108,7 @@ body {
  */
 .cover {
   border: 5px solid white;
-  background-color: #1f2934;
+  background-color: #243343;
   padding: 5% !important;
 }
 
@@ -161,10 +156,6 @@ body {
   0% {
     transfrom: skew(0deg);
   }
-  90% {
-    -webkit-transform: skew(15deg);
-            transform: skew(15deg);
-  }
   100% {
     -webkit-transform: skew(-8deg);
             transform: skew(-8deg);
@@ -174,10 +165,6 @@ body {
 @keyframes borderSlant {
   0% {
     transfrom: skew(0deg);
-  }
-  90% {
-    -webkit-transform: skew(15deg);
-            transform: skew(15deg);
   }
   100% {
     -webkit-transform: skew(-8deg);

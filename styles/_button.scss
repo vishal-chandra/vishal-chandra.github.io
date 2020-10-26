@@ -2,6 +2,7 @@
 //liquid button adapted from: https://codepen.io/markmead/pen/mGmqrJ
 
 $brightBlue: rgb(0, 255, 230);
+
 $hoverColor: $brightBlue;
 $hoverTextColor: black;
 
@@ -28,23 +29,22 @@ $regularBorderColor: white;
 }
 
 #lqdBtn {
-    flex: 1;
-    padding: 25px 50px;
-    margin: 25px;
-    border-radius: 999px;
-    border: 5px solid $brightBlue;
-    font-family: 'VT323', monospace;
-    font-size: 25px;
-    text-shadow: 0 3px 5px rgba(#000, 0.25);
-    white-space: nowrap;
-    color: #fff;
+    line-height: 1;
+    padding: 1em 2em;
+    margin: 0.5em;
+
+    border-radius: 0%;
+    border: 1px solid $regularBorderColor;
+    color: $regularColor;
+
     background: transparent;
     background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
     background-repeat: repeat-x;
     background-position: 0 -100%;
-    transition: 1.5s ease;
+    transition: 2.5s ease;
     
     &:hover {
       background-position: 500% 100%;
+      color: $hoverTextColor
     }
 }
