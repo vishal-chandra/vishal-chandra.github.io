@@ -9,9 +9,10 @@
   </head>
 
   <body>
-    <div class="cover-container w-100 h-100 p-3 mx-auto flex-column">
-      <div id="coverpage" class="row justify-content-center" style="margin-top: 10%; margin-bottom: 15%;">
-        <div class="inner cover col-xs-9 col-sm-10 col-md-6 text-center">
+    <div class="container-fluid">
+
+      <div id="coverpage" class="row justify-content-center vertical-center">
+        <div class="cover col-xs-9 col-sm-10 col-md-8 text-center">
           <h1 class="cover-heading no-wrap">Vishal Chandra</h1>
           <p class="cover-buttons">
             <button onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'});"
@@ -24,131 +25,128 @@
         </div>
       </div>
 
-      <div class="container">
-
-        <!-- About Header -->
-        <div class="row text-center">
-          <div class="col-md-6 mx-auto">
-            <div class="jumbotron" id="about">
-              <h1>About Me</h1>
-            </div>
+      <!-- About Header -->
+      <div class="row text-center">
+        <div class="col-md-6 mx-auto">
+          <div class="jumbotron" id="about">
+            <h1>About Me</h1>
           </div>
         </div>
-
-        <!-- About Info -->
-        <div class="row justify-content-center">
-          <div class="col-md-7 mb-5">
-            <div class="card" style="max-height: 700px; border: none">
-              <div class="row no-gutters justify-content-center">
-                <div class="col-md-5">
-                  <img src="./img/portrait1.jpg" class="card-img" alt="portrait">
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body align-middle" style="color: black">
-                    <h2 class="card-title text-center">Hi, I'm Vishal!</h2>
-                    <p class="card-text">
-                      I've lived in Concord, MA my whole life, but I'm excited to see where I go next!
-                      Currently, I'm a senior at Concord-Carlisle High School and am interested in coding
-                      all sorts of things. Shown below are some of my projects in graphics, hardware programming, 
-                      and data visualization. I'm always excited to learn and work on new things, so
-                      please reach out if you have any questions or ideas!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projects Header -->
-        <div class="row text-center">
-          <div class="col-md-6 mx-auto">
-            <div class="jumbotron" id="projects">
-              <h1>Projects</h1>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Info -->
-        <div class="cards">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4" style="color: rgb(44, 73, 96); ">
-                <img class="card-img-top" src="./img/projects/kaleidocycles.png">
-                <div class="card-body">
-                  <h4 class="card-title">Kaleidocycles</h4>
-                  <p class="card-text">
-                    Simulating and sculpting a class of ring linkages called "kaleidocycles." 
-                    They can be shaped and formed to create interesting designs, 
-                    with both artistic and mechanical functionality. (paper pending submission)
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-
-                    <div class="btn-group">
-                      <a class="btn btn-sm btn-outline-secondary" href="http://kaleidocycles.live">website</a>
-                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/Kaleidocycles">source</a>
-                    </div>
-
-                    <medium class="tech text-muted">
-                      Three.js, Sass, jQuery
-                    </medium>
-                  </div>
-                </div>
-                <span class="badge badge-success js">JS</span>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4" style="color: rgb(44, 73, 96)">
-                <img class="card-img-top" src="https://github.com/vishal-chandra/Harmonograph/raw/master/Demos/2.png">
-                <div class="card-body">
-                  <h4 class="card-title">Harmonograph</h4>
-                  <p class="card-text">
-                    A simulation of a Harmonograph table, a suspended, swinging table 
-                    with a pen fixed to it. The table acts like a pendulum in two directions,
-                    so the images can recreated by plotting two parametric equations.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/harmonograph">source</a>
-                    </div>
-
-                    <medium class="tech text-muted">
-                      Processing
-                    </medium>
-                  </div>
-                </div>
-                <span class="badge badge-success java">Java</span>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4" style="color: rgb(44, 73, 96)">
-                <img class="card-img-top" src="https://github.com/sophia-hubscher/flappy-bird-genetics/raw/master/res/readme/screenShot.png" width=90%>
-                <div class="card-body">
-                  <h4 class="card-title">Flappy Genetics</h4>
-                  <p class="card-text">
-                    Exploring genetic algorthims by teaching flappy bird to play by
-                    itself! The leaders of each "generation" are used as the basis 
-                    of the next. Implemented from scratch using Kim Marcel's 
-                    Toy Neural Net as the bird brain.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/FlappyGenetics">logic</a>
-                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/sophia-hubscher/flappy-bird-genetics">final source</a>
-                    </div>
-
-                    <medium class="tech text-muted">Processing, Toy NN</medium>
-                  </div>
-                </div>
-                <span class="badge badge-success java">Java</span>
-              </div>
-            </div>
-          </div>
-        </div>
-                
       </div>
+
+      <!-- About Info -->
+      <div class="row justify-content-center">
+        <div class="col-md-7 mb-5">
+          <div class="card" style="max-height: 700px; border: none">
+            <div class="row no-gutters justify-content-center">
+              <div class="col-md-5">
+                <img src="./img/portrait1.jpg" class="card-img" alt="portrait">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body align-middle" style="color: black">
+                  <h2 class="card-title text-center">Hi, I'm Vishal!</h2>
+                  <p class="card-text">
+                    I've lived in Concord, MA my whole life, but I'm excited to see where I go next!
+                    Currently, I'm a senior at Concord-Carlisle High School and am interested in coding
+                    all sorts of things. Shown below are some of my projects in graphics, hardware programming, 
+                    and data visualization. I'm always excited to learn and work on new things, so
+                    please reach out if you have any questions or ideas!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Header -->
+      <div class="row text-center">
+        <div class="col-md-6 mx-auto">
+          <div class="jumbotron" id="projects">
+            <h1>Projects</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Info -->
+      <div class="cards">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96); ">
+              <img class="card-img-top" src="./img/projects/kaleidocycles.png">
+              <div class="card-body">
+                <h4 class="card-title">Kaleidocycles</h4>
+                <p class="card-text">
+                  Simulating and sculpting a class of ring linkages called "kaleidocycles." 
+                  They can be shaped and formed to create interesting designs, 
+                  with both artistic and mechanical functionality. (paper pending submission)
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="http://kaleidocycles.live">website</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/Kaleidocycles">source</a>
+                  </div>
+
+                  <medium class="tech text-muted">
+                    Three.js, Sass, jQuery
+                  </medium>
+                </div>
+              </div>
+              <span class="badge badge-success js">JS</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96)">
+              <img class="card-img-top" src="https://github.com/vishal-chandra/Harmonograph/raw/master/Demos/2.png">
+              <div class="card-body">
+                <h4 class="card-title">Harmonograph</h4>
+                <p class="card-text">
+                  A simulation of a Harmonograph table, a suspended, swinging table 
+                  with a pen fixed to it. The table acts like a pendulum in two directions,
+                  so the images can recreated by plotting two parametric equations.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/harmonograph">source</a>
+                  </div>
+
+                  <medium class="tech text-muted">
+                    Processing
+                  </medium>
+                </div>
+              </div>
+              <span class="badge badge-success java">Java</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96)">
+              <img class="card-img-top" src="https://github.com/sophia-hubscher/flappy-bird-genetics/raw/master/res/readme/screenShot.png" width=90%>
+              <div class="card-body">
+                <h4 class="card-title">Flappy Genetics</h4>
+                <p class="card-text">
+                  Exploring genetic algorthims by teaching flappy bird to play by
+                  itself! The leaders of each "generation" are used as the basis 
+                  of the next. Implemented from scratch using Kim Marcel's 
+                  Toy Neural Net as the bird brain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/FlappyGenetics">logic</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/sophia-hubscher/flappy-bird-genetics">final source</a>
+                  </div>
+
+                  <medium class="tech text-muted">Processing, Toy NN</medium>
+                </div>
+              </div>
+              <span class="badge badge-success java">Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
+              
     </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
