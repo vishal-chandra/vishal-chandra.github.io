@@ -40,29 +40,8 @@ $regularBorderColor: white;
     background: transparent;
     background-image: url(../img/effects/liquidfill.png);
     background-repeat: repeat-x;
-    background-position: 0 -100%;
-    transition: 2.5s ease;
-    
-    &:hover {
-      background-position: 500% 100%;
-      color: $hoverTextColor
-    }
-}
-
-#lqdBtn-xs {
-    line-height: 0.5;
-    padding: 0.5em 1em;
-    margin: 0.25em;
-
-    border-radius: 0%;
-    border: 1px solid $regularBorderColor;
-    color: $regularColor;
-
-    background: transparent;
-    background-image: url(../img/effects/liquidfill.png);
-    background-repeat: repeat-x;
-    background-position: 0 -100%;
-    transition: 2.5s ease;
+    background-position: 0 -55%;
+    transition: 1.25s linear;
     
     &:hover {
       background-position: 500% 100%;

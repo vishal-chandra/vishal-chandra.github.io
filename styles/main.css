@@ -29,32 +29,12 @@
   background: transparent;
   background-image: url(../img/effects/liquidfill.png);
   background-repeat: repeat-x;
-  background-position: 0 -100%;
-  -webkit-transition: 2.5s ease;
-  transition: 2.5s ease;
+  background-position: 0 -55%;
+  -webkit-transition: 1.25s linear;
+  transition: 1.25s linear;
 }
 
 #lqdBtn:hover {
-  background-position: 500% 100%;
-  color: black;
-}
-
-#lqdBtn-xs {
-  line-height: 0.5;
-  padding: 0.5em 1em;
-  margin: 0.25em;
-  border-radius: 0%;
-  border: 1px solid white;
-  color: #00ffe6;
-  background: transparent;
-  background-image: url(../img/effects/liquidfill.png);
-  background-repeat: repeat-x;
-  background-position: 0 -100%;
-  -webkit-transition: 2.5s ease;
-  transition: 2.5s ease;
-}
-
-#lqdBtn-xs:hover {
   background-position: 500% 100%;
   color: black;
 }
