@@ -49,6 +49,10 @@
   border: 5px solid white;
   background-color: #243343;
   padding: 5% !important;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  -webkit-animation: borderSlant 1.7s ease-in-out 0s 1 forwards !important;
+          animation: borderSlant 1.7s ease-in-out 0s 1 forwards !important;
 }
 
 .cover .cover-heading {
@@ -60,15 +64,6 @@
   opacity: 0;
   -webkit-transform: skew(8deg);
           transform: skew(8deg);
-}
-
-.cover {
-  -webkit-animation: borderSlant 1.7s ease-in-out 0s 1 forwards !important;
-          animation: borderSlant 1.7s ease-in-out 0s 1 forwards !important;
-}
-
-.cover .cover-heading,
-.cover .cover-buttons {
   -webkit-animation: fade 1s ease-in-out 1.7s 1 forwards !important;
           animation: fade 1s ease-in-out 1.7s 1 forwards !important;
 }
