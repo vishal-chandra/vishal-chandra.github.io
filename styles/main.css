@@ -136,6 +136,15 @@
   background-color: #df6666;
 }
 
+.icon {
+  color: grey;
+  margin-right: 1%;
+}
+
+.icon:hover {
+  color: black;
+}
+
 /*
  * Structure
  */
