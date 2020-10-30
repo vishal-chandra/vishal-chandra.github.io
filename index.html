@@ -147,8 +147,160 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96); ">
+              <img class="card-img-top" src="./img/projects/hand.png">
+              <div class="card-body">
+                <h4 class="card-title">Mechanical Hand</h4>
+                <p class="card-text">
+                  A wooden hand controlled by servos, fishing line, and rubber bands.
+                  The servos are wired to an ESP32 microcontroller, which is bluetooth 
+                  enabled. The fingers and gestures can be controlled through an iPhone app.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/MechHand">more</a>
+                  </div>
+
+                  <medium class="tech text-muted">
+                    Arduino, Blynk, ESP32Servo
+                  </medium>
+                </div>
+              </div>
+              <span class="badge badge-success cpp">C++</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96)">
+              <img class="card-img-top" src="./img/projects/infrecharge.png">
+              <div class="card-body">
+                <h4 class="card-title">Infinite Recharge</h4>
+                <p class="card-text">
+                  Control system for the 2019-2020 FIRST Robotics Season.
+                  Focused on smooth driving and motion control through the use
+                  of PID loops. Also maintains an internal payload system in 
+                  the form of a state machine.
+                  
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/InfiniteRecharge">source</a>
+                  </div>
+
+                  <medium class="tech text-muted">
+                    WPILib, SnobotSim, Limelight
+                  </medium>
+                </div>
+              </div>
+              <span class="badge badge-success java">Java</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96)">
+              <img class="card-img-top" src="./img/projects/deepspace.jpg" width=90%>
+              <div class="card-body">
+                <h4 class="card-title">Destination: Deep Space</h4>
+                <p class="card-text">
+                  Control system for the 2018-2019 FIRST Robotics Season. 
+                  Very much focused on motion profiling and trajectories.
+                  This robot included an elevator system and a "wrist"
+                  portion, controlled by two PIDF systems.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/DeepSpace">source</a>
+                  </div>
+
+                  <medium class="tech text-muted">WPILib, Limelight</medium>
+                </div>
+              </div>
+              <span class="badge badge-success java">Java</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96); ">
+              <img class="card-img-top" src="./img/projects/aspengraph.png">
+              <div class="card-body">
+                <h4 class="card-title">Aspen Grapher</h4>
+                <p class="card-text">
+                  A project to plot grades over time to view trends.
+                  Uses Selenium to log into and scrape school grading software. 
+                  This is done periodically and organized by date, then plotted 
+                  with matplotlib.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/AspenGrapher">source</a>
+                  </div>
+
+                  <medium class="tech text-muted">
+                    Selenium, Pandas, Matplotlib
+                  </medium>
+                </div>
+              </div>
+              <span class="badge badge-success py">Python</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96)">
+              <img class="card-img-top" src="./img/projects/shader.png">
+              <div class="card-body">
+                <h4 class="card-title">Shader Experiments</h4>
+                <p class="card-text">
+                  An exploration of GLSL fragment shaders while reading the 
+                  <a href="https://thebookofshaders.com/">Book of Shaders</a>.
+                  Each pixel's color is computed independently and in parallel from
+                  as a function of mouse position, time elapsed, and pixel position.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/ShaderExperiments">source</a>
+                  </div>
+
+                  <medium class="tech text-muted">
+                    GLSLCanvas, OpenGL
+                  </medium>
+                </div>
+              </div>
+              <span class="badge badge-success glsl">GLSL</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4" style="color: rgb(44, 73, 96)">
+              <img class="card-img-top" src="./img/projects/Venerigraph.png" width=90%>
+              <div class="card-body">
+                <h4 class="card-title">Venerigraph</h4>
+                <p class="card-text">
+                  Inspired by <a href="https://www.sciencealert.com/the-celestial-dance-between-earth-and-venus-draws-a-stunning-pattern-through-space">this article</a>
+                  that covers plotting the midpoint between Earth and Venus as they move,
+                  hence "Venerigraph." The green dot moves with angular speed that is a
+                  multiple of the red's and their midpoint is tracked.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/vishal-chandra/Venerigraph">source</a>
+                  </div>
+
+                  <medium class="tech text-muted">Processing</medium>
+                </div>
+              </div>
+              <span class="badge badge-success java">Java</span>
+            </div>
+          </div>
+        </div>
       </div>
-              
+     
     </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

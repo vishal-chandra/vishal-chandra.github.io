@@ -124,6 +124,18 @@
   color: black;
 }
 
+.cpp {
+  background-color: #6c95c8;
+}
+
+.py {
+  background-color: #4473a0;
+}
+
+.glsl {
+  background-color: #df6666;
+}
+
 /*
  * Structure
  */
