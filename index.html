@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/12946c72c0.js" crossorigin="anonymous"></script>
     <title>Vishal Chandra</title>
   </head>
 
@@ -21,7 +22,9 @@
 
               <button onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'});" 
               id="lqdBtn" class="btn btn-lg btn-outline-light">projects</button>
-              <button id="lqdBtn" class="btn btn-lg btn-outline-light">contact</button>
+
+              <button onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'});"
+              id="lqdBtn" class="btn btn-lg btn-outline-light">contact</button>
             </p>
           </div>
         </div>
@@ -306,6 +309,27 @@
         class="btn btn-lg btn-outline-primary"
         style="margin-bottom: 5%; background-color: rgb(36, 51, 67)">
         more projects</a>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-6 mx-auto">
+          <div class="jumbotron" id="contact">
+            <h1>contact</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="contact card">
+            <div class="card-body" style="color: black">
+              <h3>Reach Out!</h3>
+              <a class="icon" href="mailto:vchandra21@concordcarlisle.org"><i class="fas fa-envelope-square fa-3x"></i></a>
+              <a class="icon" href="https://github.com/vishal-chandra"><i class="fab fa-github-square fa-3x"></i></a>
+
+            </div>
+          </div>
+        </div>
       </div>
      
     </div>
